@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="StackBlockCell" id="gIw-Cw-FlP" customClass="StackBlockCell" customModule="Battle_for_Lighthall" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gIw-Cw-FlP" id="nKk-4l-TH6">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Y65-5A-Ib8">
+                        <rect key="frame" x="45" y="0.0" width="324" height="44"/>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Y65-5A-Ib8" secondAttribute="trailing" constant="45" id="1mc-b8-MSp"/>
+                    <constraint firstItem="Y65-5A-Ib8" firstAttribute="top" secondItem="nKk-4l-TH6" secondAttribute="top" id="31h-Jf-Ckq"/>
+                    <constraint firstItem="Y65-5A-Ib8" firstAttribute="leading" secondItem="nKk-4l-TH6" secondAttribute="leading" constant="45" id="6Y6-1V-Wmt"/>
+                    <constraint firstAttribute="bottom" secondItem="Y65-5A-Ib8" secondAttribute="bottom" id="NBN-30-TZD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="stackView" destination="Y65-5A-Ib8" id="i61-BI-bRc"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="97.767857142857139"/>
+        </tableViewCell>
+    </objects>
+</document>

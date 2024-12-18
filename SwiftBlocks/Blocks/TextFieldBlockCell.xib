@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="153" id="Fba-tS-ZSg" customClass="TextFieldBlockCell" customModule="SwiftBlocks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="594" height="153"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fba-tS-ZSg" id="dgj-tk-KCC">
+                <rect key="frame" x="0.0" y="0.0" width="594" height="153"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bM0-Gr-15e">
+                        <rect key="frame" x="20" y="32" width="554" height="110"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkx-gZ-MQb">
+                        <rect key="frame" x="20" y="11" width="554" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xkx-gZ-MQb" firstAttribute="top" secondItem="dgj-tk-KCC" secondAttribute="topMargin" id="1Jp-Eu-XVu"/>
+                    <constraint firstItem="bM0-Gr-15e" firstAttribute="top" secondItem="xkx-gZ-MQb" secondAttribute="bottom" id="9bZ-k1-Db5"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="bM0-Gr-15e" secondAttribute="bottom" id="VEN-50-XsU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="bM0-Gr-15e" secondAttribute="trailing" id="WZF-Of-uIN"/>
+                    <constraint firstItem="bM0-Gr-15e" firstAttribute="leading" secondItem="dgj-tk-KCC" secondAttribute="leadingMargin" id="kej-gB-3sL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xkx-gZ-MQb" secondAttribute="trailing" id="xgQ-di-cGI"/>
+                    <constraint firstItem="xkx-gZ-MQb" firstAttribute="leading" secondItem="dgj-tk-KCC" secondAttribute="leadingMargin" id="zPs-05-QEe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="textField" destination="bM0-Gr-15e" id="KC3-xP-7z1"/>
+                <outlet property="title" destination="xkx-gZ-MQb" id="Opk-Kw-hsC"/>
+            </connections>
+            <point key="canvasLocation" x="397.10144927536237" y="104.12946428571428"/>
+        </tableViewCell>
+    </objects>
+</document>
